@@ -1,28 +1,29 @@
-# Assignment 1 - Graphs (Classes and Namespaces)
+# מטלה 1 - גרפים (Classes and Namespaces)
 
-Your objective in this assignment is to create a class that represents a graph and to implement algorithms on the graphs (it's time to recall Algorithms 1 course).
+המטרה שלכם במטלה הזאת היא ליצור מחלקה שמייצגת גרף ולממש אלגוריתמים על הגרפים (זה הזמן להזכר בקורס אלגוריתמים 1).
 
-In this assignment, your graph representation will be implemented using an adjacency matrix - https://en.wikipedia.org/wiki/Adjacency_matrix.
+במטלה הזאת הייצוג של הגרף שלכם יתבצע בעזרת מטריצת שכנויות - https://he.wikipedia.org/wiki/%D7%9E%D7%98%D7%A8%D7%99%D7%A6%D7%AA_%D7%A9%D7%9B%D7%A0%D7%95%D7%AA.
 
-The graph can be directed or undirected, and it can also be weighted. The adjacency matrix must be a square matrix.
+הגרף יכול להיות גרף מכוון ולא מכוון וגם גרף ממושקל. מטריצת השכנויות חייבת להיות מטריצה ריבועית.
 
-You need to write the following files:
+עליכם לכתוב את הקבצים הבאים:
 
 ```
 Graph.cpp
 Algorithms.cpp
 ```
 
-The file `Graph.cpp` contains a class representing a graph.
-The class includes the methods `loadGraph`, which receives an adjacency matrix and loads it into the graph, and `printGraph`, which prints the representation of the graph (the format is up to you, see an example in `Demo.cpp`).
+הקובץ `Graph.cpp` מכיל מחלקה המייצגת גרף.
+המחלקה מכילה את הפעולות `loadGraph` המקבלת מטריצת שכנויות וטוענת אותה לתוך הגרף ו-`printGraph` שמדפיסה את הייצוג של הגרף (הפורמט לבחירתכם, ראו דוגמה ב-`Demo.cpp`).
 
-The file `Algorithms.cpp` contains implementations of algorithms on graphs, including:
+הקובץ `Algorithms.cpp` מכיל מימושים לאלגוריתמים על גרפים. ביניהם:
 
-- `isConnected(g)` - The algorithm receives a graph and returns 1 if the graph is connected (otherwise, it returns 0).
-- `shortestPath(g, start, end)` - The algorithm receives a graph, a start vertex, and an end vertex, and returns the shortest path (if the graph is unweighted - the shortest path) between the two vertices. If there is no such path, the algorithm returns -1.
-- `isContainsCycle(g)` - The algorithm receives a graph and prints any cycle. If there is no cycle in the graph, the algorithm returns 0.
-- `isBipartite(g)` - The algorithm receives a graph and returns the bipartite division of the graph. If it is not possible to divide the graph, the algorithm returns 0.
-- `negativeCycle(g)` - The algorithm receives a graph and finds a negative cycle (a cycle where the sum of the edge weights is negative). If there is no such cycle, the algorithm prints that no negative cycle exists.
+- `isConnected(g)` - האלגוריתם מקבל גרף ומחזיר 1 אם הגרף קשיר (אחרת מחזיר 0).
+- `shortestPath(g,start,end)` - האלגוריתם מקבל גרף, קודקוד התחלה וקודקוד סיום ומחזיר את המסלול הקל ביותר (במקרה שהגרף לא ממושקל - הקצר ביותר) בין שני הקודקודים. במידה ואין מסלול כזה, האלגוריתם יחזיר -1.
+- `isContainsCycle(g)` - האלגוריתם מקבל גרף ומדפיס מעגל כלשהו. אם לא קיים מעגל בגרף, האלגוריתם יחזיר 0.
+- `isBipartite(g)` - האלגוריתם מקבל גרף ומחזיר את החלוקה של הגרף לגרף דו-צדדי. אם אי אפשר לחלק את הגרף, האלגוריתם יחזיר 0.
+- `negativeCycle(g)` - האלגוריתם מקבל גרף ומוצא מעגל שלילי (כלומר מעגל שסכום המשקלים של הצלעות שלילי). אם לא קיים מעגל כזה, האלגוריתם ידפיס שלא קיים מעגל שלילי.
 
-The file `Demo.cpp` contains examples of inputs and outputs.
-You must write your ID number and email at the beginning of each file. Additionally, besides the assignment files, you are required to submit a README file that describes the implementation and the division you performed in the code (a kind of user guide). Failure to comply with the instructions will result in a grade reduction. Good luck!
+הקובץ `Demo.cpp` מכיל דוגמאות של קלטים ופלטים.
+עליכם לכתוב בתחילת כל קובץ את מספר תעודת הזהות שלכם ואת המייל. כמו כן, בנוסף לקבצים של המטלה אתם נדרשים להגיש גם קובץ README המתאר את אופן המימוש ואת החלוקה שביצעתם בקוד (סוג של מדריך משתמש). אי עמידה בהנחיות תגרור הפחתה בציון. בהצלחה!
+  
